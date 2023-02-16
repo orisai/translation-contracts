@@ -1,0 +1,6 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Tests\\\\Orisai\\\\TranslationContracts\\\\Doubles\\\\TestTranslatable\\:\\:getLocale\\(\\) never returns null so it can be removed from the return type\\.$#"
+			count: 1
+			path: ../tests/Doubles/TestTranslatable.php
