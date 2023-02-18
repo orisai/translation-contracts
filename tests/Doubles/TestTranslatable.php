@@ -22,4 +22,14 @@ final class TestTranslatable implements Translatable
 		return 'cs';
 	}
 
+	public function __serialize(): array
+	{
+		return [];
+	}
+
+	public function __unserialize(array $data): void
+	{
+		// noop
+	}
+
 }

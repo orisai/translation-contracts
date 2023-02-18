@@ -39,4 +39,20 @@ final class TranslatableMessage implements Translatable
 		return $this->locale;
 	}
 
+	public function __serialize(): array
+	{
+		return [
+			'id' => $this->id,
+			'parameters' => $this->parameters,
+			'locale' => $this->locale,
+		];
+	}
+
+	public function __unserialize(array $data): void
+	{
+		$this->id = $data['id'];
+		$this->parameters = $data['parameters'];
+		$this->locale = $data['locale'];
+	}
+
 }

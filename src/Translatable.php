@@ -17,4 +17,14 @@ interface Translatable
 
 	public function getLocale(): ?string;
 
+	/**
+	 * @return array<int|string, mixed>
+	 */
+	public function __serialize(): array;
+
+	/**
+	 * @param array<int|string, mixed> $data
+	 */
+	public function __unserialize(array $data): void;
+
 }

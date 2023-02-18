@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased](https://github.com/orisai/translation-contracts/compare/1.0.0...HEAD)
 
+### Added
+
+- `Translatable` is explicitly serializable
+
 ## [1.0.0](https://github.com/orisai/translation-contracts/releases/tag/1.0.0) - 2023-01-25
 
 ### Added
